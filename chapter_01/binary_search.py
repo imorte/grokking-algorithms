@@ -19,3 +19,21 @@ def binary_search(arr, number):
 
 
 print(binary_search(arr, 20))
+
+
+def binary_search_recursive(arr, number, low, high):
+    if len(arr) > 1:
+        low = low
+        high = high
+        mid = (low + high) // 2
+        guess = arr[mid]
+
+        if guess == number:
+            print(mid)
+        elif guess > number:
+            binary_search_recursive(arr, number, low, mid - 1)
+        else:
+            binary_search_recursive(arr, number, mid + 1, high)
+
+
+binary_search_recursive(arr, 20, 0, len(arr) - 1)

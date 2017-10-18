@@ -37,7 +37,5 @@ def selection_sort_combined(arr):
 
     return new_arr
 
-        
-        
 
 print(selection_sort_combined(arr))
