@@ -10,4 +10,16 @@ def bubble_sort(data):
     return data
 
 
-print(bubble_sort(data))
+# print(bubble_sort(data))
+
+
+def bubble_sort_new(data):
+    for i in range(0, len(data)):
+        for j in range(i + 1, len(data)):
+            if data[j] < data[i]:
+                data[j], data[i] = data[i], data[j]
+
+    return data
+
+
+print(bubble_sort_new(data))
