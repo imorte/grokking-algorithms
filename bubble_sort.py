@@ -10,7 +10,7 @@ def bubble_sort(data):
     return data
 
 
-# print(bubble_sort(data))
+print(bubble_sort(data))
 
 
 def bubble_sort_new(data):
